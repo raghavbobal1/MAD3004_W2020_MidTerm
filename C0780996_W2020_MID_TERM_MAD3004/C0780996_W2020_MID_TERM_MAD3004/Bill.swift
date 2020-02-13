@@ -19,4 +19,13 @@ class bill
     private var totalBillAmount: Float
     private var billType: billType
     
+    internal init(billId: Int, billDate: Date?, totalBillAmount: Float, billType: billType)
+    {
+        self.billId = billId
+        self.billDate = billDate
+        self.totalBillAmount = totalBillAmount
+        self.billType = billType
+    }
+    
+    
 }
