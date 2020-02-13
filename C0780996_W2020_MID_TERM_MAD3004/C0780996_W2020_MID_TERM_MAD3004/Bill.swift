@@ -8,9 +8,15 @@
 
 import Foundation
 
+enum billType
+{case HYDRO, MOBILE, INTERNET}
+
+
 class bill
 {
     private var billId: Int
     private var billDate: Date?
     private var totalBillAmount: Float
+    private var billType: billType
+    
 }
