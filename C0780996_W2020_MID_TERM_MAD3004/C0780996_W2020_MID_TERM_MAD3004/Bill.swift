@@ -12,19 +12,20 @@ enum BillType
 {case HYDRO, MOBILE, INTERNET}
 
 
-class Bill
+public class Bill
 {
     private var billId: Int
     private var billDate: Date?
     private var totalBillAmount: Float
     private var billType: BillType
     
-    internal init(billId: Int, billDate: Date?, totalBillAmount: Float, billType: BillType)
+    init(billId: Int, billDate: Date?, totalBillAmount: Float, billType: BillType)
     {
         self.billId = billId
         self.billDate = billDate
         self.totalBillAmount = totalBillAmount
-        self.billType = BillType
+        self.billType = billType
+        
     }
     
 }
