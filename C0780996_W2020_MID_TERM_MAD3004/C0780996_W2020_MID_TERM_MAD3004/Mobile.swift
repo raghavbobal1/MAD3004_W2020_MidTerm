@@ -8,12 +8,22 @@
 
 import Foundation
 
-class Mobile: Bill
+public class Mobile: Bill
 {
     private var mobileManufacturerName: String
     private var planName: String
     private var mobileMumber: String
     private var mobileDataUsed: Float
     private var callMinutesUsed: Float
+    
+     init(mobileManufacturerName: String, planName: String, mobileMumber: String, mobileDataUsed: Float, callMinutesUsed: Float)
+    {
+           self.mobileManufacturerName = mobileManufacturerName
+           self.planName = planName
+           self.mobileMumber = mobileMumber
+           self.mobileDataUsed = mobileDataUsed
+           self.callMinutesUsed = callMinutesUsed
+           super.init(billId: billId, billDate: billDate, billType: billType)
+       }
 
 }
