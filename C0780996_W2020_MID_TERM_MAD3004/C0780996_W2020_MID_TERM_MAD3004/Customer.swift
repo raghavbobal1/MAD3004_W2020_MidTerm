@@ -18,6 +18,15 @@ public class Customer: Bill
     private var billDictionary: String
     private var totalAmount: Float??
     
-    
+    init(billId: Int, billDate: Date?, billType: BillType,customerId: Int, firstName: String, lastName: String, fullName: String, emailId: String, billDictionary: String)
+    {
+    self.customerId = customerId
+    self.firstName = firstName
+    self.lastName = lastName
+    self.fullName = fullName
+    self.emailId = emailId
+    self.billDictionary = billDictionary
+    super.init(billId: billId, billDate: billDate, billType: billType)
+    }
 }
 
