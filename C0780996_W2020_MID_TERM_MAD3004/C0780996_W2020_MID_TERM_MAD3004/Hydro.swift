@@ -8,9 +8,17 @@
 
 import Foundation
 
-class Hydro: Bill
-{
-    private var agencyName: String
+public class Hydro: Bill
+{   private var agencyName: String
     private var unitConsumed: Float
 
+       init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitConsumed: Float)
+      {
+           self.agencyName = agencyName
+           self.unitConsumed = unitConsumed
+           super.init(billId: billId, billDate: billDate, billType: billType)
+        
+      }
+
 }
+

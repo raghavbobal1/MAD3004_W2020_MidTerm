@@ -16,7 +16,7 @@ public class Mobile: Bill
     private var mobileDataUsed: Float
     private var callMinutesUsed: Float
     
-     init(mobileManufacturerName: String, planName: String, mobileMumber: String, mobileDataUsed: Float, callMinutesUsed: Float)
+     init(billId: Int, billDate: Date?, billType: BillType,mobileManufacturerName: String, planName: String, mobileMumber: String, mobileDataUsed: Float, callMinutesUsed: Float)
     {
            self.mobileManufacturerName = mobileManufacturerName
            self.planName = planName

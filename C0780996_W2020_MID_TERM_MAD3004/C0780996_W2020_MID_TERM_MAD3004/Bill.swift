@@ -24,6 +24,6 @@ public class Bill
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
-}
+    }
     
 }
