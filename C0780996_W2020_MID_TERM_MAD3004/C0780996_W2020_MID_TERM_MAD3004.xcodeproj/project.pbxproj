@@ -14,6 +14,7 @@
 		BD98438323F62C7A00781B39 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438223F62C7A00781B39 /* Mobile.swift */; };
 		BD98438723F6322800781B39 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438623F6322800781B39 /* Hydro.swift */; };
 		BD98438923F74A7600781B39 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438823F74A7500781B39 /* Customer.swift */; };
+		BD98438B23F7645100781B39 /* Insurance .swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438A23F7645100781B39 /* Insurance .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		BD98438223F62C7A00781B39 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		BD98438623F6322800781B39 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		BD98438823F74A7500781B39 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		BD98438A23F7645100781B39 /* Insurance .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Insurance .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				BD98438223F62C7A00781B39 /* Mobile.swift */,
 				BD98438823F74A7500781B39 /* Customer.swift */,
 				BD98438023F6201E00781B39 /* Internet.swift */,
+				BD98438A23F7645100781B39 /* Insurance .swift */,
 			);
 			path = C0780996_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				BD98438323F62C7A00781B39 /* Mobile.swift in Sources */,
 				BD98438923F74A7600781B39 /* Customer.swift in Sources */,
 				BD09D8E323F616D30039A0A2 /* Bill.swift in Sources */,
+				BD98438B23F7645100781B39 /* Insurance .swift in Sources */,
 				BD09D8DC23F613800039A0A2 /* main.swift in Sources */,
 				BD98438123F6201E00781B39 /* Internet.swift in Sources */,
 				BD98438723F6322800781B39 /* Hydro.swift in Sources */,
