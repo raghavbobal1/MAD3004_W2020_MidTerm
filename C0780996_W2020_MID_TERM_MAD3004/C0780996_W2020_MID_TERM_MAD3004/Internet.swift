@@ -13,11 +13,11 @@ public class Internet: Bill
     private var providerName: String
     private var InternetGbUsed: Float
 
-    init(billId: String, billDate: Date, billType: BillType, providerName: String, InternetGbUsed: Float)
+    init(billId: Int, billDate: Date, billType: BillType, providerName: String, InternetGbUsed: Float)
     {
            self.providerName = providerName
            self.InternetGbUsed = InternetGbUsed
-           //super.init(billId: billId, billDate: billDate, totalBillAmount: t, billType: billType)
+           super.init(billId: billId, billDate: billDate, billType: billType)
    
     }
 
