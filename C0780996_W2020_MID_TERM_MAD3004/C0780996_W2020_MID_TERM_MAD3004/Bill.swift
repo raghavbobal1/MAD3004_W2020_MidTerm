@@ -8,24 +8,23 @@
 
 import Foundation
 
-enum billType
+enum BillType
 {case HYDRO, MOBILE, INTERNET}
 
 
-class bill
+class Bill
 {
     private var billId: Int
     private var billDate: Date?
     private var totalBillAmount: Float
-    private var billType: billType
+    private var billType: BillType
     
-    internal init(billId: Int, billDate: Date?, totalBillAmount: Float, billType: billType)
+    internal init(billId: Int, billDate: Date?, totalBillAmount: Float, billType: BillType)
     {
         self.billId = billId
         self.billDate = billDate
         self.totalBillAmount = totalBillAmount
-        self.billType = billType
+        self.billType = BillType
     }
-    
     
 }
