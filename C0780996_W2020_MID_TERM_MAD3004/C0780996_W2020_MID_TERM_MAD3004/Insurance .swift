@@ -24,6 +24,9 @@ public class Insurance
   private var totalInsuranceAmount: Double
     
     
-  
+  public static func calTotalDays(startDate: Date, endDate: Date) -> Int
+    {
+        return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
+    }
 
 }
