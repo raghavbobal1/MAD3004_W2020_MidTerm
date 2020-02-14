@@ -15,17 +15,15 @@ public class Customer: Bill
     private var lastName: String
     private var fullName: String
     private var emailId: String
-    private var billDictionary: String
-    private var totalAmount: Float??
     
-    init(billId: Int, billDate: Date?, billType: BillType,customerId: Int, firstName: String, lastName: String, fullName: String, emailId: String, billDictionary: String)
+    
+    init(billId: Int, billDate: Date?, billType: BillType,customerId: Int, firstName: String, lastName: String, fullName: String, emailId: String)
     {
     self.customerId = customerId
     self.firstName = firstName
     self.lastName = lastName
     self.fullName = fullName
     self.emailId = emailId
-    self.billDictionary = billDictionary
     super.init(billId: billId, billDate: billDate, billType: billType)
     }
 }

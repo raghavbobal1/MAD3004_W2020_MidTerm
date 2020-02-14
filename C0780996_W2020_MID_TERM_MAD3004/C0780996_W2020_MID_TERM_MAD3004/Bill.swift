@@ -26,4 +26,12 @@ public class Bill
         self.billType = billType
     }
     
+    
+    func display()
+    {
+       print("Bill ID: \(billId)")
+       print("Bill Date: \(String(describing: billDate))")
+       print("Bill Type: \(billType)")
+    }
+
 }
