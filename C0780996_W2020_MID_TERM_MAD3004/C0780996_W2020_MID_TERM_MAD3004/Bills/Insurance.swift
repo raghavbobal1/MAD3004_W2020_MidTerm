@@ -8,16 +8,11 @@
 
 import Foundation
 
-enum TypeOfInsurance
-{
-    case House, Car, Business, Health
-}
-
 public class Insurance: Bill
     
 {
   private var insuranceProviderName: String
-  private var typeofInsurance: TypeOfInsurance
+  private var type: TypeOfInsurance
   private var startDate: Date
   private var endDate: Date
   private var totalDays: Int
@@ -29,14 +24,14 @@ public class Insurance: Bill
         return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
     }
 
-   init(billId: Int, billDate: Date?, billType: BillType,insuranceProviderName: String, typeofInsurance: TypeOfInsurance, startDate: Date, endDate: Date, totalInsuranceAmount: Double)
+   init(billId: Int, billDate: Date?, billType: BillType,customerId: Int, insuranceProviderName: String, typeofInsurance: TypeOfInsurance, startDate: Date, endDate: Date, totalInsuranceAmount: Double)
     {
           self.insuranceProviderName = insuranceProviderName
-          self.typeofInsurance = typeofInsurance
           self.startDate = startDate
           self.endDate = endDate
           self.totalInsuranceAmount = totalInsuranceAmount
           self.totalDays = Insurance.calTotalDays(startDate: startDate, endDate: endDate)
-          super.init(billId: billId, billDate: billDate, billType: billType)
+          self.type = typeofInsurance
+          super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
     }
 }
