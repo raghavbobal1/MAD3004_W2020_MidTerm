@@ -8,10 +8,6 @@
 
 import Foundation
 
-enum BillType
-{case HYDRO, MOBILE, INTERNET}
-
-
 public class Bill: IDisplayDelegate
 {
     private var billId: Int
