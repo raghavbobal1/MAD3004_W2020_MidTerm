@@ -11,14 +11,21 @@ import Foundation
 public class Hydro: Bill
 {   private var agencyName: String
     private var unitConsumed: Float
+    private var perUnitValue = 10
 
-       init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitConsumed: Float)
+    init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitConsumed: Float, customerId: Int)
       {
            self.agencyName = agencyName
            self.unitConsumed = unitConsumed
-           super.init(billId: billId, billDate: billDate, billType: billType)
+           super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
         
       }
+    
+ //TO DO
+//    func generateBill(unitConsumed:Float)
+//    {
+//        unitConsumed *
+//    }
 
 }
 
