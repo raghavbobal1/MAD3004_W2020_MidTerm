@@ -15,15 +15,16 @@ public class Mobile: Bill
     private var mobileMumber: String
     private var mobileDataUsed: Float
     private var callMinutesUsed: Float
+    var type: BillType = BillType.Mobile
     
-     init(billId: Int, billDate: Date?, billType: BillType,mobileManufacturerName: String, planName: String, mobileMumber: String, mobileDataUsed: Float, callMinutesUsed: Float)
+     init(billId: Int, billDate: Date?, billType: BillType,customerId: Int,mobileManufacturerName: String, planName: String, mobileMumber: String, mobileDataUsed: Float, callMinutesUsed: Float)
     {
            self.mobileManufacturerName = mobileManufacturerName
            self.planName = planName
            self.mobileMumber = mobileMumber
            self.mobileDataUsed = mobileDataUsed
            self.callMinutesUsed = callMinutesUsed
-           super.init(billId: billId, billDate: billDate, billType: billType)
+           super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
        }
 
 }
