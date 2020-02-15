@@ -13,7 +13,7 @@ enum TypeOfInsurance
     case House, Car, Business, Health
 }
 
-public class Insurance
+public class Insurance: Bill
     
 {
   private var insuranceProviderName: String
@@ -29,7 +29,7 @@ public class Insurance
         return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
     }
 
-   init(insuranceProviderName: String, typeofInsurance: TypeOfInsurance, startDate: Date, endDate: Date, totalInsuranceAmount: Double)
+   init(billId: Int, billDate: Date?, billType: BillType,insuranceProviderName: String, typeofInsurance: TypeOfInsurance, startDate: Date, endDate: Date, totalInsuranceAmount: Double)
     {
           self.insuranceProviderName = insuranceProviderName
           self.typeofInsurance = typeofInsurance
@@ -37,6 +37,6 @@ public class Insurance
           self.endDate = endDate
           self.totalInsuranceAmount = totalInsuranceAmount
           self.totalDays = Insurance.calTotalDays(startDate: startDate, endDate: endDate)
-      
+          super.init(billId: billId, billDate: billDate, billType: billType)
     }
 }
