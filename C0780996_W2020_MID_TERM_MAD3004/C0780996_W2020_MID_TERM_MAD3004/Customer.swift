@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Customer: Bill
+public class Customer
 {
     private var customerId: Int
     private var firstName: String
@@ -17,14 +17,13 @@ public class Customer: Bill
     private var emailId: String
     
     
-    init(billId: Int, billDate: Date?, billType: BillType,customerId: Int, firstName: String, lastName: String, fullName: String, emailId: String)
+    init(customerId: Int, firstName: String, lastName: String, fullName: String, emailId: String)
     {
-    self.customerId = customerId
-    self.firstName = firstName
-    self.lastName = lastName
-    self.fullName = fullName
-    self.emailId = emailId
-    super.init(billId: billId, billDate: billDate, billType: billType)
+        self.customerId = customerId
+        self.firstName = firstName
+        self.lastName = lastName
+        self.fullName = fullName
+        self.emailId = emailId
     }
 }
 
