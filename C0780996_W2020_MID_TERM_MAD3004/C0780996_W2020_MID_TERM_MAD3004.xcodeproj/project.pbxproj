@@ -14,7 +14,9 @@
 		BD98438323F62C7A00781B39 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438223F62C7A00781B39 /* Mobile.swift */; };
 		BD98438723F6322800781B39 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438623F6322800781B39 /* Hydro.swift */; };
 		BD98438923F74A7600781B39 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438823F74A7500781B39 /* Customer.swift */; };
-		BD98438B23F7645100781B39 /* Insurance .swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438A23F7645100781B39 /* Insurance .swift */; };
+		BD98438B23F7645100781B39 /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438A23F7645100781B39 /* Insurance.swift */; };
+		BD98438D23F77F8100781B39 /* TypeOfInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438C23F77F8100781B39 /* TypeOfInsurance.swift */; };
+		BD98438F23F789E400781B39 /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD98438E23F789E400781B39 /* BillType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,7 +40,9 @@
 		BD98438223F62C7A00781B39 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		BD98438623F6322800781B39 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		BD98438823F74A7500781B39 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
-		BD98438A23F7645100781B39 /* Insurance .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Insurance .swift"; sourceTree = "<group>"; };
+		BD98438A23F7645100781B39 /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
+		BD98438C23F77F8100781B39 /* TypeOfInsurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfInsurance.swift; sourceTree = "<group>"; };
+		BD98438E23F789E400781B39 /* BillType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,16 +75,42 @@
 		BD09D8DA23F613800039A0A2 /* C0780996_W2020_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
-				BD09D8E423F61ADB0039A0A2 /* IDisplay.swift */,
+				BD98439323F78A4400781B39 /* Bills */,
+				BD98439223F78A1A00781B39 /* Enumerations */,
+				BD98439423F78A7D00781B39 /* Util */,
 				BD09D8DB23F613800039A0A2 /* main.swift */,
+				BD98438823F74A7500781B39 /* Customer.swift */,
+			);
+			path = C0780996_W2020_MID_TERM_MAD3004;
+			sourceTree = "<group>";
+		};
+		BD98439223F78A1A00781B39 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				BD98438E23F789E400781B39 /* BillType.swift */,
+				BD98438C23F77F8100781B39 /* TypeOfInsurance.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		BD98439323F78A4400781B39 /* Bills */ = {
+			isa = PBXGroup;
+			children = (
+				BD98438A23F7645100781B39 /* Insurance.swift */,
 				BD09D8E223F616D30039A0A2 /* Bill.swift */,
 				BD98438623F6322800781B39 /* Hydro.swift */,
 				BD98438223F62C7A00781B39 /* Mobile.swift */,
-				BD98438823F74A7500781B39 /* Customer.swift */,
 				BD98438023F6201E00781B39 /* Internet.swift */,
-				BD98438A23F7645100781B39 /* Insurance .swift */,
 			);
-			path = C0780996_W2020_MID_TERM_MAD3004;
+			path = Bills;
+			sourceTree = "<group>";
+		};
+		BD98439423F78A7D00781B39 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D8E423F61ADB0039A0A2 /* IDisplay.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +174,11 @@
 				BD98438323F62C7A00781B39 /* Mobile.swift in Sources */,
 				BD98438923F74A7600781B39 /* Customer.swift in Sources */,
 				BD09D8E323F616D30039A0A2 /* Bill.swift in Sources */,
-				BD98438B23F7645100781B39 /* Insurance .swift in Sources */,
+				BD98438B23F7645100781B39 /* Insurance.swift in Sources */,
+				BD98438F23F789E400781B39 /* BillType.swift in Sources */,
 				BD09D8DC23F613800039A0A2 /* main.swift in Sources */,
 				BD98438123F6201E00781B39 /* Internet.swift in Sources */,
+				BD98438D23F77F8100781B39 /* TypeOfInsurance.swift in Sources */,
 				BD98438723F6322800781B39 /* Hydro.swift in Sources */,
 				BD09D8E523F61ADB0039A0A2 /* IDisplay.swift in Sources */,
 			);
