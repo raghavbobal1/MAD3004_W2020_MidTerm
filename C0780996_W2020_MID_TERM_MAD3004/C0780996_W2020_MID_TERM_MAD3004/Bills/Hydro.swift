@@ -12,6 +12,7 @@ public class Hydro: Bill
 {   private var agencyName: String
     private var unitConsumed: Float
     private var perUnitValue = 10
+    var type: BillType = BillType.Hydro
 
     init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitConsumed: Float, customerId: Int)
       {
