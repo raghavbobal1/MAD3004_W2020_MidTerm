@@ -12,7 +12,7 @@ enum BillType
 {case HYDRO, MOBILE, INTERNET}
 
 
-public class Bill
+public class Bill: IDisplayDelegate
 {
     private var billId: Int
     private var billDate: Date?
