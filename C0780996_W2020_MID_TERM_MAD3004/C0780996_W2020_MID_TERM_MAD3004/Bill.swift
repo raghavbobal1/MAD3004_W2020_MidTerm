@@ -18,12 +18,14 @@ public class Bill: IDisplayDelegate
     private var billDate: Date?
     private var totalBillAmount: Float??
     private var billType: BillType
+    private var customerId: Int
     
-    init(billId: Int, billDate: Date?, billType: BillType)
+    init(billId: Int, billDate: Date?, billType: BillType, customerId:Int)
     {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
+        self.customerId = customerId
     }
     
     
