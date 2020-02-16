@@ -14,15 +14,15 @@ public class Customer
     private var firstName: String
     private var lastName: String
     private var fullName: String
+    {return "Full Name: \(firstName) \(lastName)"}
     private var emailId: String
     
     
-    init(customerId: Int, firstName: String, lastName: String, fullName: String, emailId: String)
+    init(customerId: Int, firstName: String, lastName: String, emailId: String)
     {
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
-        self.fullName = fullName
         self.emailId = emailId
     }
 }
