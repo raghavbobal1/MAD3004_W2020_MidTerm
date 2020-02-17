@@ -11,12 +11,14 @@ import Foundation
 public class Hydro: Bill
 {   private var agencyName: String
     private var unitsConsumed: Double
+    private var hydroAmt: Double
     var type: BillType = BillType.Hydro
 
-    init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitsConsumed: Double, customerId: Int)
+    init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitsConsumed: Double, customerId: Int, hydroAmt: Double)
       {
            self.agencyName = agencyName
            self.unitsConsumed = unitsConsumed
+           self.hydroAmt = hydroAmt
            super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
         
       }
@@ -29,11 +31,11 @@ public class Hydro: Bill
         {
             price += 150
         }
-        else if (unitsConsumed > 600 && unitsConsumed < 800)
+        else if (unitsConsumed > 600 && unitsConsumed <= 800)
         {
             price += 215
         }
-        else if (unitsConsumed >800 && unitsConsumed < 1000)
+        else if (unitsConsumed > 800 && unitsConsumed < 1000)
         {
             price += 300
         }
@@ -41,6 +43,9 @@ public class Hydro: Bill
         {
             price = 0.50 * unitsConsumed
         }
+         
+        hydroAmt = price
+        return hydroAmt
+    }
 
 }
-
