@@ -9,7 +9,8 @@
 import Foundation
 
 public class Hydro: Bill
-{   private var agencyName: String
+{
+    private var agencyName: String
     private var unitsConsumed: Double
     private var hydroAmt: Double
     var type: BillType = BillType.Hydro
@@ -48,4 +49,11 @@ public class Hydro: Bill
         return hydroAmt
     }
 
+    override func display()
+    {
+        super.display()
+        print("Bill Amount: \(billCalculation())")
+        print("Agency Name: \(agencyName)")
+        print("Units Consumed: \(unitsConsumed)")
+    }
 }
