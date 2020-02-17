@@ -11,7 +11,7 @@ import Foundation
 public class Internet: Bill
 {
     private var providerName: String
-    private var InternetGbUsed: Float
+    private var internetGbUsed: Float
     var type: BillType = BillType.Internet
 
     init(billId: Int, billDate: Date, billType: BillType,customerId: Int, providerName: String, InternetGbUsed: Float)
@@ -19,7 +19,26 @@ public class Internet: Bill
            self.providerName = providerName
            self.InternetGbUsed = InternetGbUsed
            super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
+    }
+    
    
+    func billCalculate() -> Double
+    {
+        var price = 0.0
+          
+        if (internetGbUsed < 3)
+        {
+            price = 2.15 * internetGbUsed
+        }
+        else if (internetGbUsed > 3 && internetGbUsed < 10)
+        {
+            price = 4 * internetGbUsed
+        }
+        else
+        {
+            price = 5.15 * internetGbUsed
+        }
+              return price
     }
 
 }
