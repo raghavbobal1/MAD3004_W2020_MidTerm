@@ -35,7 +35,7 @@ public class Insurance: Bill
           super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
     }
 
-    func billCalculation () -> Double
+    func billCalculation() -> Double
     {
         var price: Double = 0.0
         var price1: Double = 0.0
@@ -90,6 +90,12 @@ public class Insurance: Bill
         totalInsuranceAmount = price + price1 + price2 + price3
         return totalInsuranceAmount
     }
-
+    override func display()
+    {
+        super.display()
+        print("\t Total Amount: \(billCalculation())")
+        print("\tInsurance Provider Name: \(insuranceProviderName)")
+        print("\tType Of Insurance: \(type)")
+    }
 
 }
