@@ -36,28 +36,28 @@ public class Mobile: Bill
         
          if (callMinutesUsed < 300)
            {
-                price += 15
+                price += 35
            }
-         else if (callMinutesUsed > 300 && callMinutesUsed < 800 )
+         else if (callMinutesUsed > 300 && callMinutesUsed < 500 )
            {
-                price += 25
+                price += 50
            }
          else
            {
-            price += 30
+            price = 0.15 * callMinutesUsed
            }
         
          if (mobileDataUsed < 5)
            {
-            price1 += 50
+                price1 += 50
            }
          else if (mobileDataUsed > 5 && mobileDataUsed < 10)
            {
-            price1 += 75
+                price1 += 85
            }
          else
            {
-            price1 += 100
+                price1 = 9.75 * mobileDataUsed
            }
         
         monthlyBill = price + price1
