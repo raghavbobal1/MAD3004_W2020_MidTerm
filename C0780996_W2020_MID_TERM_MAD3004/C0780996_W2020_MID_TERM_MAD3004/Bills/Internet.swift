@@ -22,7 +22,7 @@ public class Internet: Bill
     }
     
    
-    func billCalculate() -> Double
+    func billCalculation() -> Double
     {
         var price: Double = 0.0
           
@@ -41,4 +41,13 @@ public class Internet: Bill
               return price
     }
 
+    
+    override func display()
+    {
+        super.display()
+        print("Bill Amount: \(billCalculation())")
+        print("Provider Name: \(providerName)")
+        print("Data (IN GB): \(internetGbUsed)")
+    }
+    
 }
