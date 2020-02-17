@@ -10,23 +10,37 @@ import Foundation
 
 public class Hydro: Bill
 {   private var agencyName: String
-    private var unitConsumed: Float
-    private var perUnitValue = 10
+    private var unitsConsumed: Double
     var type: BillType = BillType.Hydro
 
-    init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitConsumed: Float, customerId: Int)
+    init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitsConsumed: Double, customerId: Int)
       {
            self.agencyName = agencyName
-           self.unitConsumed = unitConsumed
+           self.unitsConsumed = unitsConsumed
            super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
         
       }
     
- //TO DO
-//    func generateBill(unitConsumed:Float)
-//    {
-//        unitConsumed *
-//    }
+    func billCalculation() -> Double
+    {
+        var price:Double=0.0
+        
+        if (unitsConsumed < 600)
+        {
+            price += 150
+        }
+        else if (unitsConsumed > 600 && unitsConsumed < 800)
+        {
+            price += 215
+        }
+        else if (unitsConsumed >800 && unitsConsumed < 1000)
+        {
+            price += 300
+        }
+        else
+        {
+            price = 0.50 * unitsConsumed
+        }
 
 }
 
