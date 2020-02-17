@@ -10,5 +10,5 @@ import Foundation
 
 enum TypeOfInsurance
 {
-    case Home, Car, Business, Health
+    case Home, Vehicle, Business, Health
 }

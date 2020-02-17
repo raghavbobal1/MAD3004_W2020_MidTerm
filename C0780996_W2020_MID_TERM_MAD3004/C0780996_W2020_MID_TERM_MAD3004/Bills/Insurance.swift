@@ -34,4 +34,62 @@ public class Insurance: Bill
           self.type = typeofInsurance
           super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
     }
+
+    func billCalculation () -> Double
+    {
+        var price: Double = 0.0
+        var price1: Double = 0.0
+        var price2: Double = 0.0
+        var price3: Double = 0.0
+        
+        if (type == TypeOfInsurance.Home)
+        {
+            if (totalDays == 365)
+            {
+                price += 1250
+            }
+            else
+            {
+                price = 3.75 * Double(totalDays)
+            }
+        }
+        else if (type == TypeOfInsurance.Vehicle)
+        {
+            if (totalDays == 365)
+            {
+                price1 += 2000
+            }
+            else
+            {
+                price1 = 5.5 * Double(totalDays)
+            }
+        }
+        else if (type == TypeOfInsurance.Business)
+        {
+            if (totalDays == 365)
+            {
+                price2 += 1500
+            }
+            else
+            {
+                price2 = 4.15 * Double(totalDays)
+            }
+        }
+        else if (type == TypeOfInsurance.Health)
+        {
+            if (totalDays == 365)
+            {
+                price3 += 500
+            }
+            else
+            {
+                price3 = 2.50 * Double(totalDays)
+            }
+        }
+        
+        totalInsuranceAmount = price + price1 + price2 + price3
+        return totalInsuranceAmount
+    }
+
+
 }

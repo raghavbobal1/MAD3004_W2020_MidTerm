@@ -96,8 +96,8 @@
 		BD98439323F78A4400781B39 /* Bills */ = {
 			isa = PBXGroup;
 			children = (
-				BD98438A23F7645100781B39 /* Insurance.swift */,
 				BD09D8E223F616D30039A0A2 /* Bill.swift */,
+				BD98438A23F7645100781B39 /* Insurance.swift */,
 				BD98438623F6322800781B39 /* Hydro.swift */,
 				BD98438223F62C7A00781B39 /* Mobile.swift */,
 				BD98438023F6201E00781B39 /* Internet.swift */,
