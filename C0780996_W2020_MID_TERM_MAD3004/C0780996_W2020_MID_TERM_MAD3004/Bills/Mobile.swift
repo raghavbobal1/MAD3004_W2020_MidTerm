@@ -28,7 +28,7 @@ public class Mobile: Bill
            super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
     }
 
-    func billCalculate() -> Double
+    func billCalculation() -> Double
     {
         var monthlyBill: Double = 0.0
         var price: Double = 0.0
@@ -64,4 +64,19 @@ public class Mobile: Bill
         return monthlyBill
         
     }
+    
+    override func display()
+    {
+        super.display()
+        print("\tBill Amount: \(billCalculation())")
+        print("\tManufacturer Name: \(mobileManufacturerName)")
+        print("\tPlan Name: \(planName)")
+        print("\tMobile Data Used(IN GB): \(mobileDataUsed)")
+        print("\tMinute: \(callMinutesUsed)")
+    }
+    
+    
 }
+
+
+
