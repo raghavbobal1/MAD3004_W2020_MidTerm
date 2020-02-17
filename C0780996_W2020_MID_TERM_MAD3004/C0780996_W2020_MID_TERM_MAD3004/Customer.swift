@@ -10,12 +10,14 @@ import Foundation
 
 public class Customer
 {
+    
     private var customerId: Int
     private var firstName: String
     private var lastName: String
     private var fullName: String
     {return "Full Name: \(firstName) \(lastName)"}
     private var emailId: String
+    private var customerBills = [String: Bill]()
     
     
     init(customerId: Int, firstName: String, lastName: String, emailId: String)
@@ -25,5 +27,11 @@ public class Customer
         self.lastName = lastName
         self.emailId = emailId
     }
+    
+    
+    
+    
+    
+    
+    
 }
-

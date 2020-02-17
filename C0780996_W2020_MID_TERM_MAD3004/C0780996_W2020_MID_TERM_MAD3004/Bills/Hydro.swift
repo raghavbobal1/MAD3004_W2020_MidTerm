@@ -20,7 +20,7 @@ public class Hydro: Bill
            self.agencyName = agencyName
            self.unitsConsumed = unitsConsumed
            self.hydroAmt = hydroAmt
-           super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
+        super.init(billId: billId, billDate: billDate!, billType: billType, customerId: customerId)
         
       }
     
@@ -52,8 +52,8 @@ public class Hydro: Bill
     override func display()
     {
         super.display()
-        print("Bill Amount: \(billCalculation())")
-        print("Agency Name: \(agencyName)")
-        print("Units Consumed: \(unitsConsumed)")
+        print("Bill Amount: \(self.billCalculation())")
+        print("Agency Name: \(self.agencyName)")
+        print("Units Consumed: \(self.unitsConsumed)")
     }
 }

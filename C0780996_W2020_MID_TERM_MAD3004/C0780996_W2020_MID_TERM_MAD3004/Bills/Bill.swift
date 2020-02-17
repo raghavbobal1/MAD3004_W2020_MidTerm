@@ -12,11 +12,11 @@ public class Bill: IDisplayDelegate
 {
     private var billId: Int
     private var billDate: Date?
-    private var totalBillAmount: Float??
+    private var totalBillAmount: Float?
     private var billType: BillType
     private var customerId: Int
     
-    init(billId: Int, billDate: Date?, billType: BillType, customerId:Int)
+    init(billId: Int, billDate: Date, billType: BillType, customerId:Int)
     {
         self.billId = billId
         self.billDate = billDate
@@ -27,9 +27,9 @@ public class Bill: IDisplayDelegate
     
     func display()
     {
-       print("Bill ID: \(billId)")
-       print("Bill Date: \(String(describing: billDate))")
-       print("Bill Type: \(billType)")
+       print("Bill ID: \(self.billId)")
+       print("Bill Date: \(String(describing: self.billDate))")
+       print("Bill Type: \(self.billType)")
     }
 
 }

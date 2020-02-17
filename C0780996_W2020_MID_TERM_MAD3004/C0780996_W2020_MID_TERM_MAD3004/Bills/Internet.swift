@@ -45,9 +45,9 @@ public class Internet: Bill
     override func display()
     {
         super.display()
-        print("Bill Amount: \(billCalculation())")
-        print("Provider Name: \(providerName)")
-        print("Data (IN GB): \(internetGbUsed)")
+        print("Bill Amount: \(self.billCalculation())")
+        print("Provider Name: \(self.providerName)")
+        print("Data (IN GB): \(self.internetGbUsed)")
     }
     
 }

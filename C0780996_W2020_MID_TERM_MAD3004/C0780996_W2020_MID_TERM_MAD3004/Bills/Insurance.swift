@@ -32,70 +32,70 @@ public class Insurance: Bill
           self.totalInsuranceAmount = totalInsuranceAmount
           self.totalDays = Insurance.calTotalDays(startDate: startDate, endDate: endDate)
           self.type = typeofInsurance
-          super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
+        super.init(billId: billId, billDate: billDate!, billType: billType, customerId: customerId)
     }
 
     func billCalculation() -> Double
     {
-        var price: Double = 0.0
-        var price1: Double = 0.0
-        var price2: Double = 0.0
-        var price3: Double = 0.0
+        var homePrice: Double = 0.0
+        var vehiclePrice: Double = 0.0
+        var businessPrice: Double = 0.0
+        var healthPrice: Double = 0.0
         
         if (type == TypeOfInsurance.Home)
         {
             if (totalDays == 365)
             {
-                price += 1250
+                homePrice += 1250
             }
             else
             {
-                price = 3.75 * Double(totalDays)
+                homePrice = 3.75 * Double(totalDays)
             }
         }
         else if (type == TypeOfInsurance.Vehicle)
         {
             if (totalDays == 365)
             {
-                price1 += 2000
+                vehiclePrice += 2000
             }
             else
             {
-                price1 = 5.5 * Double(totalDays)
+                vehiclePrice = 5.5 * Double(totalDays)
             }
         }
         else if (type == TypeOfInsurance.Business)
         {
             if (totalDays == 365)
             {
-                price2 += 1500
+                businessPrice += 1500
             }
             else
             {
-                price2 = 4.15 * Double(totalDays)
+                businessPrice = 4.15 * Double(totalDays)
             }
         }
         else if (type == TypeOfInsurance.Health)
         {
             if (totalDays == 365)
             {
-                price3 += 500
+                healthPrice += 500
             }
             else
             {
-                price3 = 2.50 * Double(totalDays)
+                healthPrice = 2.50 * Double(totalDays)
             }
         }
         
-        totalInsuranceAmount = price + price1 + price2 + price3
+        totalInsuranceAmount = homePrice + vehiclePrice + businessPrice + healthPrice
         return totalInsuranceAmount
     }
     override func display()
     {
         super.display()
-        print("\t Total Amount: \(billCalculation())")
-        print("\tInsurance Provider Name: \(insuranceProviderName)")
-        print("\tType Of Insurance: \(type)")
+        print("\t Total Amount: \(self.billCalculation())")
+        print("\tInsurance Provider Name: \(self.insuranceProviderName)")
+        print("\tType Of Insurance: \(self.type)")
     }
 
 }

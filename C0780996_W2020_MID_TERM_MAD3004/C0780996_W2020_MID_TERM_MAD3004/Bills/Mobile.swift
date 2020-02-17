@@ -25,42 +25,42 @@ public class Mobile: Bill
            self.mobileMumber = mobileMumber
            self.mobileDataUsed = mobileDataUsed
            self.callMinutesUsed = callMinutesUsed
-           super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
+        super.init(billId: billId, billDate: billDate!, billType: billType, customerId: customerId)
     }
 
     func billCalculation() -> Double
     {
         var monthlyBill: Double = 0.0
-        var price: Double = 0.0
-        var price1: Double = 0.0
+        var minutePrice: Double = 0.0
+        var dataPrice: Double = 0.0
         
          if (callMinutesUsed < 300)
            {
-                price += 35
+                minutePrice += 35
            }
          else if (callMinutesUsed > 300 && callMinutesUsed < 500 )
            {
-                price += 50
+                minutePrice += 50
            }
          else
            {
-            price = 0.15 * callMinutesUsed
+            minutePrice = 0.15 * callMinutesUsed
            }
         
          if (mobileDataUsed < 5)
            {
-                price1 += 50
+                dataPrice += 50
            }
          else if (mobileDataUsed > 5 && mobileDataUsed < 10)
            {
-                price1 += 85
+                dataPrice += 85
            }
          else
            {
-                price1 = 9.75 * mobileDataUsed
+                dataPrice = 9.75 * mobileDataUsed
            }
         
-        monthlyBill = price + price1
+        monthlyBill = minutePrice + dataPrice
         return monthlyBill
         
     }
@@ -68,11 +68,11 @@ public class Mobile: Bill
     override func display()
     {
         super.display()
-        print("\tBill Amount: \(billCalculation())")
-        print("\tManufacturer Name: \(mobileManufacturerName)")
-        print("\tPlan Name: \(planName)")
-        print("\tMobile Data Used(IN GB): \(mobileDataUsed)")
-        print("\tMinute: \(callMinutesUsed)")
+        print("\tBill Amount: \(self.billCalculation())")
+        print("\tManufacturer Name: \(self.mobileManufacturerName)")
+        print("\tPlan Name: \(self.planName)")
+        print("\tMobile Data Used(IN GB): \(self.mobileDataUsed)")
+        print("\tMinute: \(self.callMinutesUsed)")
     }
     
     
