@@ -16,6 +16,7 @@ public class Mobile: Bill
     private var mobileDataUsed: Float
     private var callMinutesUsed: Float
     var type: BillType = BillType.Mobile
+
     
      init(billId: Int, billDate: Date?, billType: BillType,customerId: Int,mobileManufacturerName: String, planName: String, mobileMumber: String, mobileDataUsed: Float, callMinutesUsed: Float)
     {
@@ -25,6 +26,42 @@ public class Mobile: Bill
            self.mobileDataUsed = mobileDataUsed
            self.callMinutesUsed = callMinutesUsed
            super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
-       }
+    }
 
+    func billCalculate() -> Double
+    {
+        var monthlyBill: Double = 0.0
+        var price: Double = 0.0
+        var price1: Double = 0.0
+        
+         if (callMinutesUsed < 300)
+           {
+                price += 15
+           }
+         else if (callMinutesUsed > 300 && callMinutesUsed < 800 )
+           {
+                price += 25
+           }
+         else
+           {
+            price += 30
+           }
+        
+         if (mobileDataUsed < 5)
+           {
+            price1 += 50
+           }
+         else if (mobileDataUsed > 5 && mobileDataUsed < 10)
+           {
+            price1 += 75
+           }
+         else
+           {
+            price1 += 100
+           }
+        
+        monthlyBill = price + price1
+        return monthlyBill
+        
+    }
 }
