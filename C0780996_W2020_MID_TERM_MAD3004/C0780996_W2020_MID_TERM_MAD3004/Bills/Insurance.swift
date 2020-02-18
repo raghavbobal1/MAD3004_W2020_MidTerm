@@ -33,7 +33,7 @@ public class Insurance: Bill
         super.init(billId: billId, billDate: billDate, billType: billType)
     }
 
-    func billCalculation() -> Double
+    override func billCalculation() -> Double
     {
         var homePrice: Double = 0.0
         var vehiclePrice: Double = 0.0

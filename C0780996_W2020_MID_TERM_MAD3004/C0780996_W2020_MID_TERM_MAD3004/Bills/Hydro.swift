@@ -18,11 +18,11 @@ public class Hydro: Bill
       {
            self.agencyName = agencyName
            self.unitsConsumed = unitsConsumed
-           super.init(billId: billId, billDate: billDate, billType: billType)
+        super.init(billId: billId, billDate: billDate, billType: billType)
         
       }
     
-    func billCalculation() -> Double
+    override func billCalculation() -> Double
     {
         var price:Double=0.0
         var hydroAmt:Double=0.0

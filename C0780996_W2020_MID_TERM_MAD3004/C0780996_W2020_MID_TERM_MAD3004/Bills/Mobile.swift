@@ -25,10 +25,10 @@ public class Mobile: Bill
            self.mobileNumber = mobileNumber
            self.mobileDataUsed = mobileDataUsed
            self.callMinutesUsed = callMinutesUsed
-        super.init(billId: billId, billDate: billDate, billType: billType)
+            super.init(billId: billId, billDate: billDate, billType: billType)
     }
 
-    func billCalculation() -> Double
+    override func billCalculation() -> Double
     {
         var monthlyBill: Double = 0.0
         var minutePrice: Double = 0.0

@@ -18,6 +18,14 @@ public class Customer: IDisplayDelegate
     private var emailId: String
     private var mobileNumber:String
     private var customerBills : [String: Bill]
+    var totalBill: Double
+    {
+        get
+        {
+            return calculateTotalBill()
+        }
+    }
+    
     
    /*This function is for validating the email address
     provided by the customer*/
@@ -74,6 +82,19 @@ public class Customer: IDisplayDelegate
            customerBills.updateValue(bill, forKey: customerId)
          }
 
+    
+    func calculateTotalBill() -> Double
+       {
+             var total = 0.0
+             for i in customerBills
+             {
+               total += i.value.totalBillAmount
+             }
+             return total
+           
+       }
+    
+    
     func display()
     {
         print("---------------- Customer Information ------------")
@@ -86,6 +107,16 @@ public class Customer: IDisplayDelegate
         {
           i.value.display()
         }
+        print("************************************")
+        print("\n")
+        print("TOTAL BILL AMOUNT FOR THE CUSTOMER IS - \(self.totalBill.Setcurrency())")
+        print("\n")
+        print("************************************")
     }
     
+
+   
+
+
 }
+

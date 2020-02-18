@@ -12,7 +12,7 @@ public class Bill: IDisplayDelegate
 {
     private var billId: Int
     private var billDate: Date
-    private var totalBillAmount: Float?
+    var totalBillAmount: Double = 0.0
     private var billType: BillType
     
     init(billId: Int, billDate: Date, billType: BillType)
@@ -20,6 +20,12 @@ public class Bill: IDisplayDelegate
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
+        self.totalBillAmount = billCalculation()
+    }
+    
+    func billCalculation() -> Double
+    {
+        return 0.0
     }
     
     

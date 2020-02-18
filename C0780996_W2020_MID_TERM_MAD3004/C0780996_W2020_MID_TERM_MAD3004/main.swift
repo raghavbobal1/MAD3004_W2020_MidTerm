@@ -42,10 +42,8 @@ var c4 = Customer(customerId:4, firstName: "Ram", lastName: "Sharma", emailId: "
 
 var c5 = Customer(customerId:5, firstName: "Uday", lastName: "Shetty", emailId: "Udaybhai@gmail.com", mobileNumber: "1717827382", customerBills: ["Hydro Bill" : hy3])
 
-
+//adding customers to array
 var findingCustomers = [Int: Customer]()
-
-
 func addCustomer(customer: Customer)
 {
 findingCustomers.updateValue(customer, forKey: customer.customerId)
@@ -55,8 +53,9 @@ addCustomer(customer: c1)
 addCustomer(customer: c2)
 addCustomer(customer: c3)
 addCustomer(customer: c4)
+addCustomer(customer: c5)
 
-
+//displaying details of all customers
 for c in findingCustomers.keys.sorted()
 {
 
@@ -79,9 +78,9 @@ func getCustomerById(customerId: Int)
                 print()
         }
     }
-
+//displaying details of customers with id-1 and id-5
 getCustomerById(customerId: 1)
-
+getCustomerById(customerId: 5)
 
 //func orderedDisplayOfCustomers()
 //{
