@@ -16,9 +16,8 @@ public class Customer: IDisplayDelegate
     private var fullName: String
      {return "Full Name: \(firstName) \(lastName)"}
     private var emailId: String
-    private var customerBills = [String: Bill]()
     private var mobileNumber:String
-    
+    private var customerBills : [String: Bill]
     
    /*This function is for validating the email address
     provided by the customer*/
@@ -49,12 +48,13 @@ public class Customer: IDisplayDelegate
 
     
     
-    init(customerId: Int, firstName: String, lastName: String, emailId: String, mobileNumber:String )
+    init(customerId: Int, firstName: String, lastName: String, emailId: String, mobileNumber:String,customerBills:[String: Bill])
     {
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
         self.mobileNumber = mobileNumber
+        self.customerBills = customerBills
         self.emailId = emailId
             if isValid(emailAddressString: self.emailId)
             {
