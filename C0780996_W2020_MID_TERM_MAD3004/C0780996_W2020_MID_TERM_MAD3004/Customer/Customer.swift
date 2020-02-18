@@ -102,7 +102,14 @@ public class Customer: IDisplayDelegate
         print("Name: \(self.fullName)")
         print("Email ID: \(self.emailId)")
         print("Mobile Number: \(self.mobileNumber)")
-        print("---------------- Bill Information ----------------")
+        
+        //to display customers with no bills
+        if customerBills.isEmpty{
+            print("----------------No bill information for this customer----------------")
+        }else{
+            print("---------------- Bill Information ----------------")
+        }
+        
         for i in customerBills
         {
           i.value.display()

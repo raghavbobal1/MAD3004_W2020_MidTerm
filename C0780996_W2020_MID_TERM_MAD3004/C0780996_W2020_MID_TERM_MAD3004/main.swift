@@ -32,9 +32,9 @@ var ins3 = Insurance(billId: 012, billDate: Date(), billType: BillType.Insurance
 var ins4 = Insurance(billId: 013, billDate: Date(), billType: BillType.Insurance, insuranceProviderName: "CIBC Insurance", typeofInsurance: TypeOfInsurance.Vehicle, startDate: Date(), endDate: Date())
 
 //Customer Class Objects
-var c1 = Customer(customerId:1, firstName: "Kush", lastName: "Bhatia", emailId: "kush@gmail.com", mobileNumber: "9990390900", customerBills: ["Mobile Bill" : m2, "Hydro Bill": hy1,"Internet Bill" : it1])
+var c1 = Customer(customerId:1, firstName: "Kush", lastName: "Bhatia", emailId: "kush@gmail.com", mobileNumber: "9990390900", customerBills: ["Mobile Bill" : m2, "Hydro Bill": hy1])
     
-var c2 = Customer(customerId:2, firstName: "Salman", lastName: "Khan", emailId: "Salm323@gmail.com", mobileNumber: "9999992700", customerBills: ["Health Insurance Bill" : ins2,"Mobile Bill" : m3])
+var c2 = Customer(customerId:2, firstName: "Salman", lastName: "Khan", emailId: "Salm323@gmail.com", mobileNumber: "9999992700", customerBills: ["Health Insurance Bill" : ins2,"Mobile Bill" : m3,"Internet Bill" : it1])
 
 var c3 = Customer(customerId:3, firstName: "Raghav", lastName: "Bobal", emailId: "raghav@gmail.com", mobileNumber: "6479370707", customerBills: ["Mobile Bill" : m1])
 
@@ -60,6 +60,7 @@ for c in findingCustomers.keys.sorted()
 {
 
     findingCustomers[c]?.display()
+   
 }
 
 func getCustomerById(customerId: Int)
