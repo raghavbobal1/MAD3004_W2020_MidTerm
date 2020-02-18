@@ -34,3 +34,5 @@ http://swiftdeveloperblog.com/code-examples/validate-email-address-code-example-
 https://gist.github.com/ranmyfriend/96f6ae1b64b177af62de402c6898a314- For validating the mobile number of customers
 
 https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html- Helped with syntax
+
+https://stackoverflow.com/questions/41558832/how-to-format-a-double-into-currency-swift-3- for formatting currency
