@@ -10,11 +10,11 @@ import Foundation
 
 public class Customer: IDisplayDelegate
 {
-    private var customerId: Int
+    var customerId: Int
     private var firstName: String
     private var lastName: String
     private var fullName: String
-     {return "Full Name: \(firstName) \(lastName)"}
+     {return "\(firstName) \(lastName)"}
     private var emailId: String
     private var mobileNumber:String
     private var customerBills : [String: Bill]
@@ -76,11 +76,12 @@ public class Customer: IDisplayDelegate
 
     func display()
     {
+        print("---------------- Customer Information ------------")
         print("Customer ID: \(self.customerId)")
         print("Name: \(self.fullName)")
         print("Email ID: \(self.emailId)")
         print("Mobile Number: \(self.mobileNumber)")
-        print("---- Bill Information ----")
+        print("---------------- Bill Information ----------------")
         for i in customerBills
         {
           i.value.display()

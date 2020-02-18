@@ -14,15 +14,16 @@ var m2 = Mobile(billId: 002, billDate: Date(), billType: BillType.Mobile, mobile
 var m3 = Mobile(billId: 003, billDate: Date(), billType: BillType.Mobile, mobileManufacturerName: "Bell", planName: "Home plan", mobileNumber: "6545656565", mobileDataUsed: 5.6, callMinutesUsed: 777.77)
 
 //Internet Class Objects
-var it1 = Internet(billId: 004, billDate: Date(), billType: BillType.Internet, providerName: "Rogers", internetGbUsed: 807.99)
-var it2 = Internet(billId: 005, billDate: Date(), billType: BillType.Internet, providerName: "Virgin", internetGbUsed: 567.87)
-var it3 = Internet(billId: 006, billDate: Date(), billType: BillType.Internet, providerName: "Bell", internetGbUsed: 888.05)
+var it1 = Internet(billId: 004, billDate: Date(), billType: BillType.Internet, providerName: "Rogers", internetGbUsed: 80.99)
+var it2 = Internet(billId: 005, billDate: Date(), billType: BillType.Internet, providerName: "Virgin", internetGbUsed: 57.87)
+var it3 = Internet(billId: 006, billDate: Date(), billType: BillType.Internet, providerName: "Bell", internetGbUsed: 88.05)
 
 //Hydro Class Objects
 var hy1 = Hydro(billId: 007, billDate: Date(), billType: BillType.Hydro, agencyName: "Toronto Hydro", unitsConsumed: 677)
 var hy2 = Hydro(billId: 008, billDate: Date(), billType: BillType.Hydro, agencyName:
     "Hydro One", unitsConsumed: 1227)
 var hy3 = Hydro(billId: 009, billDate: Date(), billType: BillType.Hydro, agencyName: "Ontario Hydro", unitsConsumed: 897)
+
 
 //Insurance Class Objects
 var ins1 = Insurance(billId: 010, billDate: Date(), billType: BillType.Insurance, insuranceProviderName: "LIC Insurance", typeofInsurance: TypeOfInsurance.Business, startDate: Date(), endDate: Date())
@@ -44,11 +45,31 @@ var c5 = Customer(customerId:5, firstName: "Uday", lastName: "Shetty", emailId: 
 
 var findingCustomers = [Int: Customer]()
 
+
+func addCustomer(customer: Customer)
+{
+findingCustomers.updateValue(customer, forKey: customer.customerId)
+}
+
+addCustomer(customer: c1)
+addCustomer(customer: c2)
+addCustomer(customer: c3)
+addCustomer(customer: c4)
+
+
+for c in findingCustomers.keys.sorted()
+{
+
+    findingCustomers[c]?.display()
+}
+
 func getCustomerById(customerId: Int)
     {
         if findingCustomers.keys.contains(customerId)
         {
-           print("\t\t########## Showing Customer By ID ##########")
+           print("\n")
+           print("############## Showing Customer By ID ##############")
+           print("\n")
            print()
            findingCustomers[customerId]?.display()
         }
@@ -57,7 +78,6 @@ func getCustomerById(customerId: Int)
                 print("Customer Not Found...")
                 print()
         }
-            
     }
 
 getCustomerById(customerId: 1)

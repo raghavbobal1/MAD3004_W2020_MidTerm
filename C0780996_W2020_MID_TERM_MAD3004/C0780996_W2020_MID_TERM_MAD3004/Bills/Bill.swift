@@ -25,9 +25,10 @@ public class Bill: IDisplayDelegate
     
     func display()
     {
-       print("Bill ID: \(self.billId)")
-       print("Bill Date: \(String(describing: self.billDate))")
-       print("Bill Type: \(self.billType)")
+       print("*********************************************")
+       print("\t\tBill ID: \(self.billId)")
+       print("\t\tBill Date: \(String(describing: self.billDate))")
+       print("\t\tBill Type: \(self.billType)")
     }
 
 }

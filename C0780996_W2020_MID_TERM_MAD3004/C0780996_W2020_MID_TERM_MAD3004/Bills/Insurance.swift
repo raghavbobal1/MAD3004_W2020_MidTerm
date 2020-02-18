@@ -92,9 +92,9 @@ public class Insurance: Bill
     override func display()
     {
         super.display()
-        print("\t Total Amount: \(self.billCalculation())")
-        print("\tInsurance Provider Name: \(self.insuranceProviderName)")
-        print("\tType Of Insurance: \(self.type)")
+        print("\t\tTotal Amount: \(self.billCalculation())")
+        print("\t\tInsurance Provider Name: \(self.insuranceProviderName)")
+        print("\t\tType Of Insurance: \(self.type)")
     }
 
 }
