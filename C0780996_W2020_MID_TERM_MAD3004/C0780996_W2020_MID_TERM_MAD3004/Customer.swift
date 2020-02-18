@@ -23,7 +23,7 @@ public class Customer: IDisplayDelegate
    /*This function is for validating the email address
     provided by the customer*/
     
-    func isValid(emailAddressString: String) -> Bool
+   public func isValid(emailAddressString: String) -> Bool
         {
             var returnValue = true
             let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
@@ -54,20 +54,18 @@ public class Customer: IDisplayDelegate
         self.customerId = customerId
         self.firstName = firstName
         self.lastName = lastName
-        self.emailId = emailId
         self.mobileNumber = mobileNumber
-        do {
-                if isValid(emailAddressString: self.emailId)
-                {
-                self.emailId = emailId
-                }
-                else
-                {
-                print("Please enter a valid email address")
-                exit(0)
-                }
-           }
-     }
+        self.emailId = emailId
+            if isValid(emailAddressString: self.emailId)
+            {
+            self.emailId = emailId
+            }
+            else
+            {
+            print("Please enter a valid email address")
+            exit(0)
+            }
+    }
     
     //Method to add a new bill to a customer
     

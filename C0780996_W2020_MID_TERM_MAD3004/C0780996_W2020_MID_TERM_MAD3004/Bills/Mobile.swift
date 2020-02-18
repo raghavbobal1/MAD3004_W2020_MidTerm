@@ -12,20 +12,20 @@ public class Mobile: Bill
 {
     private var mobileManufacturerName: String
     private var planName: String
-    private var mobileMumber: String
+    private var mobileNumber: String
     private var mobileDataUsed: Double
     private var callMinutesUsed: Double
     var type: BillType = BillType.Mobile
 
     
-     init(billId: Int, billDate: Date?, billType: BillType,customerId: Int,mobileManufacturerName: String, planName: String, mobileMumber: String, mobileDataUsed: Double, callMinutesUsed: Double)
+     init(billId: Int, billDate: Date, billType: BillType,mobileManufacturerName: String, planName: String, mobileNumber: String, mobileDataUsed: Double, callMinutesUsed: Double)
     {
            self.mobileManufacturerName = mobileManufacturerName
            self.planName = planName
-           self.mobileMumber = mobileMumber
+           self.mobileNumber = mobileNumber
            self.mobileDataUsed = mobileDataUsed
            self.callMinutesUsed = callMinutesUsed
-        super.init(billId: billId, billDate: billDate!, billType: billType, customerId: customerId)
+        super.init(billId: billId, billDate: billDate, billType: billType)
     }
 
     func billCalculation() -> Double

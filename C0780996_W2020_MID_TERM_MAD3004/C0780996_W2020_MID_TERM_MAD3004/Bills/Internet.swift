@@ -18,7 +18,7 @@ public class Internet: Bill
     {
            self.providerName = providerName
            self.internetGbUsed = internetGbUsed
-           super.init(billId: billId, billDate: billDate, billType: billType, customerId: customerId)
+           super.init(billId: billId, billDate: billDate, billType: billType)
     }
     
    

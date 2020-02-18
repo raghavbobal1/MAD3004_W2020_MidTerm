@@ -11,17 +11,15 @@ import Foundation
 public class Bill: IDisplayDelegate
 {
     private var billId: Int
-    private var billDate: Date?
+    private var billDate: Date
     private var totalBillAmount: Float?
     private var billType: BillType
-    private var customerId: Int
     
-    init(billId: Int, billDate: Date, billType: BillType, customerId:Int)
+    init(billId: Int, billDate: Date, billType: BillType)
     {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
-        self.customerId = customerId
     }
     
     

@@ -15,12 +15,12 @@ public class Hydro: Bill
     private var hydroAmt: Double
     var type: BillType = BillType.Hydro
 
-    init(billId: Int, billDate: Date?, billType: BillType,agencyName: String, unitsConsumed: Double, customerId: Int, hydroAmt: Double)
+    init(billId: Int, billDate: Date, billType: BillType,agencyName: String, unitsConsumed: Double, customerId: Int, hydroAmt: Double)
       {
            self.agencyName = agencyName
            self.unitsConsumed = unitsConsumed
            self.hydroAmt = hydroAmt
-           super.init(billId: billId, billDate: billDate!, billType: billType, customerId: customerId)
+           super.init(billId: billId, billDate: billDate, billType: billType)
         
       }
     
