@@ -9,6 +9,15 @@ A program that calculates the total bills for a customer. A bill could be an int
 <img src="https://i93.servimg.com/u/f93/18/45/29/87/classt10.png" alt="Class Structure" style="float: left; margin-right: 10px;"/>
 <img src="https://i93.servimg.com/u/f93/18/45/29/87/classt11.png" alt="Class Structure" style="float: center; margin-right: 50px;"/>
 
+#CLASSES AND PROTOCOLS
+UTIL GROUP: IDISPLAYDELEGATE PROTOCOL
+BILL GROUP: BILL,MOBILE, HYDRO AND INTERNET CLASS 
+EXTENSIONS: STRING(TO VALIDATE MOBILE NUMBER)
+ENUM GROUP: BILLTYPE AND TYPE OF INSURANCE ENUMS
+CUSTOMER GROUP: CUSTOMER CLASS
+ADDITIONAL CLASSES: INSURANCE (BONUS)
+
+
 # REFERENCES 
 https://answers.unity.com/questions/491060/using-enum-in-an-if-statement.html - For using enum in if - else
 
