@@ -17,3 +17,5 @@ https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-day
 http://swiftdeveloperblog.com/code-examples/validate-email-address-code-example-in-swift/ - For validating the email of customers.
 
 https://gist.github.com/ranmyfriend/96f6ae1b64b177af62de402c6898a314- For validating the mobile number of customers
+
+https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html- Helped with syntax
