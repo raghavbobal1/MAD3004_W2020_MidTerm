@@ -31,12 +31,49 @@ var ins3 = Insurance(billId: 012, billDate: Date(), billType: BillType.Insurance
 var ins4 = Insurance(billId: 013, billDate: Date(), billType: BillType.Insurance, insuranceProviderName: "CIBC Insurance", typeofInsurance: TypeOfInsurance.Vehicle, startDate: Date(), endDate: Date())
 
 //Customer Class Objects
-var c1 = Customer(customerId: 1, firstName: "Kush", lastName: "Bhatia", emailId: "kush@gmail.com", mobileNumber: "9990390900", customerBills: ["Mobile Bill" : m2, "Hydro Bill": hy1,"Internet Bill" : it1])
+var c1 = Customer(customerId:1, firstName: "Kush", lastName: "Bhatia", emailId: "kush@gmail.com", mobileNumber: "9990390900", customerBills: ["Mobile Bill" : m2, "Hydro Bill": hy1,"Internet Bill" : it1])
+    
+var c2 = Customer(customerId:2, firstName: "Salman", lastName: "Khan", emailId: "Salm323@gmail.com", mobileNumber: "9999992700", customerBills: ["Health Insurance Bill" : ins2,"Mobile Bill" : m3])
 
-var c2 = Customer(customerId: 2, firstName: "Salman", lastName: "Khan", emailId: "Salm323@gmail.com", mobileNumber: "9999992700", customerBills: ["Health Insurance Bill" : ins2,"Mobile Bill" : m3])
+var c3 = Customer(customerId:3, firstName: "Raghav", lastName: "Bobal", emailId: "raghav@gmail.com", mobileNumber: "6479370707", customerBills: ["Mobile Bill" : m1])
 
-var c3 = Customer(customerId: 3, firstName: "Raghav", lastName: "Bobal", emailId: "raghav@gmail.com", mobileNumber: "6479370707", customerBills: ["Mobile Bill" : m1])
+var c4 = Customer(customerId:4, firstName: "Ram", lastName: "Sharma", emailId: "major@yahoo.com", mobileNumber: "8787112356", customerBills: [:])
 
-//var c4 = Customer(customerId: 4, firstName: "Ram", lastName: "Sharma", emailId: "major@yahoo.com", mobileNumber: "8787112356", customerBills: ["This Customer has no bills" : null])
+var c5 = Customer(customerId:5, firstName: "Uday", lastName: "Shetty", emailId: "Udaybhai@gmail.com", mobileNumber: "1717827382", customerBills: ["Hydro Bill" : hy3])
 
-var c5 = Customer(customerId: 5, firstName: "Uday", lastName: "Shetty", emailId: "Udaybhai@gmail.com", mobileNumber: "1717827382", customerBills: ["Hydro Bill" : hy3])
+
+var findingCustomers = [Int: Customer]()
+
+func getCustomerById(customerId: Int)
+    {
+        if findingCustomers.keys.contains(customerId)
+        {
+           print("\t\t########## Showing Customer By ID ##########")
+           print()
+           findingCustomers[customerId]?.display()
+        }
+        else
+        {
+                print("Customer Not Found...")
+                print()
+        }
+            
+    }
+
+getCustomerById(customerId: 1)
+
+
+
+
+
+
+
+
+/*
+var billArray = Array<Bill>()
+billArray.append(m1)
+billArray.append(m2)
+
+c1.newBill(bill: h2, customerId: "A98999")
+
+*/

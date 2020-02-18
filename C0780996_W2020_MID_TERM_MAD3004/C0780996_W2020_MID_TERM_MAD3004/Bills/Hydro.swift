@@ -12,7 +12,6 @@ public class Hydro: Bill
 {
     private var agencyName: String
     private var unitsConsumed: Double
-    private var hydroAmt: Double
     var type: BillType = BillType.Hydro
 
     init(billId: Int, billDate: Date, billType: BillType,agencyName: String, unitsConsumed: Double)
@@ -26,6 +25,7 @@ public class Hydro: Bill
     func billCalculation() -> Double
     {
         var price:Double=0.0
+        var hydroAmt:Double=0.0
         
         if (unitsConsumed < 600)
         {

@@ -16,7 +16,6 @@ public class Insurance: Bill
   private var startDate: Date
   private var endDate: Date
   private var totalDays: Int
-  private var totalInsuranceAmount: Double
     
     
   public static func calTotalDays(startDate: Date, endDate: Date) -> Int
@@ -40,6 +39,7 @@ public class Insurance: Bill
         var vehiclePrice: Double = 0.0
         var businessPrice: Double = 0.0
         var healthPrice: Double = 0.0
+        var totalInsuranceAmount: Double
         
         if (type == TypeOfInsurance.Home)
         {
