@@ -24,12 +24,11 @@ public class Insurance: Bill
         return Calendar.current.dateComponents([.day], from: startDate, to: endDate).day!
     }
 
-   init(billId: Int, billDate: Date, billType: BillType,customerId: Int, insuranceProviderName: String, typeofInsurance: TypeOfInsurance, startDate: Date, endDate: Date, totalInsuranceAmount: Double)
+   init(billId: Int, billDate: Date, billType: BillType, insuranceProviderName: String, typeofInsurance: TypeOfInsurance, startDate: Date, endDate: Date)
     {
           self.insuranceProviderName = insuranceProviderName
           self.startDate = startDate
           self.endDate = endDate
-          self.totalInsuranceAmount = totalInsuranceAmount
           self.totalDays = Insurance.calTotalDays(startDate: startDate, endDate: endDate)
           self.type = typeofInsurance
         super.init(billId: billId, billDate: billDate, billType: billType)

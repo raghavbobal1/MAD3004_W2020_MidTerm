@@ -10,6 +10,6 @@ import Foundation
 
 enum BillType
 {
-    case Hydro, Mobile, Internet
+    case Hydro, Mobile, Internet,Insurance
     
 }

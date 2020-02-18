@@ -80,9 +80,9 @@
 				BD98439323F78A4400781B39 /* Bills */,
 				BD98439223F78A1A00781B39 /* Enumerations */,
 				BD98439423F78A7D00781B39 /* Util */,
-				BD09D8DB23F613800039A0A2 /* main.swift */,
-				BD98438823F74A7500781B39 /* Customer.swift */,
 				BD98439523FB616800781B39 /* Extensions */,
+				BD98439823FBF22200781B39 /* Customer */,
+				BD09D8DB23F613800039A0A2 /* main.swift */,
 			);
 			path = C0780996_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -122,6 +122,14 @@
 				BD98439623FB618E00781B39 /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD98439823FBF22200781B39 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				BD98438823F74A7500781B39 /* Customer.swift */,
+			);
+			path = Customer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

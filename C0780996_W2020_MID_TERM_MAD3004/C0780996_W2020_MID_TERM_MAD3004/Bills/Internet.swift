@@ -14,7 +14,7 @@ public class Internet: Bill
     private var internetGbUsed: Double
     var type: BillType = BillType.Internet
 
-    init(billId: Int, billDate: Date, billType: BillType,customerId: Int, providerName: String, internetGbUsed: Double)
+    init(billId: Int, billDate: Date, billType: BillType, providerName: String, internetGbUsed: Double)
     {
            self.providerName = providerName
            self.internetGbUsed = internetGbUsed
