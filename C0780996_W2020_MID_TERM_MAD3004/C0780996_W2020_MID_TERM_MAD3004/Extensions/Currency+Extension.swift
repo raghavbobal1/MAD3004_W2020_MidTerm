@@ -24,5 +24,13 @@ func units() -> String
   {
   return "\(self) Units"
   }
-    
+   
+
+ func setMins() -> String
+  {
+    return "\(self) Mins"
+   }
+        
 }
+
+

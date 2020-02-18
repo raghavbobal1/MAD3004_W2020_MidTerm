@@ -27,7 +27,7 @@ public class Bill: IDisplayDelegate
     {
        print("*********************************************")
        print("\t\tBill ID: \(self.billId)")
-       print("\t\tBill Date: \(String(describing: self.billDate))")
+        print("\t\tBill Date: \(String(describing: self.billDate.formattedBillDate()))")
        print("\t\tBill Type: \(self.billType)")
     }
 

@@ -83,6 +83,16 @@ func getCustomerById(customerId: Int)
 getCustomerById(customerId: 1)
 
 
+//func orderedDisplayOfCustomers()
+//{
+//let sortedCustomers = Customer.sorted(by:{ $0.allBillsTotal() > $1.allBillsTotal()})
+//for i in sortedCustomers
+//  {
+//    i.display()
+//  }
+//}
+//
+//
 
 
 
