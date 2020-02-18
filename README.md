@@ -36,3 +36,5 @@ https://gist.github.com/ranmyfriend/96f6ae1b64b177af62de402c6898a314- For valida
 https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html- Helped with syntax
 
 https://stackoverflow.com/questions/41558832/how-to-format-a-double-into-currency-swift-3- for formatting currency
+
+https://developer.apple.com/documentation/foundation/dateformatter- for formatting date 
