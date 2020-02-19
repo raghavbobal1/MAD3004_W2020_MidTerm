@@ -24,6 +24,331 @@ CUSTOMER GROUP: CUSTOMER CLASS
 ADDITIONAL CLASSES: INSURANCE (BONUS)
 
 
+
+# OUTPUTS
+
+#DSPLAYS ALL CUSTOMERS
+
+---------------- Customer Information ------------
+Customer ID: 1
+Name: Kush Bhatia
+Email ID: kush@gmail.com
+Mobile Number: 9990390900
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 2
+		Bill Date: 18/February/2020
+		Bill Type: Mobile
+		Bill Amount: $234.95
+		Manufacturer Name: Freedom
+		Plan Name: Business Plan
+		Mobile Data Used: 8.9 GB
+		Minute: 999.67 Mins
+*********************************************
+		Bill ID: 7
+		Bill Date: 18/February/2020
+		Bill Type: Hydro
+		Bill Amount: 215.0
+		Agency Name: Toronto Hydro
+		Units Consumed: 677.0
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $449.95
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 2
+Name: Salman Khan
+Email ID: Salm323@gmail.com
+Mobile Number: 9999992700
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 4
+		Bill Date: 18/February/2020
+		Bill Type: Internet
+		Bill Amount: $1227.00
+		Provider Name: Rogers
+		Data: 80.99 GB
+*********************************************
+		Bill ID: 11
+		Bill Date: 18/February/2020
+		Bill Type: Insurance
+		Total Amount: 0.0
+		Insurance Provider Name: TD Insurance
+		Type Of Insurance: Health
+*********************************************
+		Bill ID: 3
+		Bill Date: 18/February/2020
+		Bill Type: Mobile
+		Bill Amount: $201.67
+		Manufacturer Name: Bell
+		Plan Name: Home plan
+		Mobile Data Used: 5.6 GB
+		Minute: 777.77 Mins
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $1428.66
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 3
+Name: Raghav Bobal
+Email ID: raghav@gmail.com
+Mobile Number: 6479370707
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 1
+		Bill Date: 18/February/2020
+		Bill Type: Mobile
+		Bill Amount: $170.05
+		Manufacturer Name: Fido
+		Plan Name: Student Plan
+		Mobile Data Used: 6.1 GB
+		Minute: 567.0 Mins
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $170.05
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 4
+Name: Ram Sharma
+Email ID: major@yahoo.com
+Mobile Number: 8787112356
+----------------No bill information for this customer----------------
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $0.00
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 5
+Name: Uday Shetty
+Email ID: Udaybhai@gmail.com
+Mobile Number: 1717827382
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 9
+		Bill Date: 18/February/2020
+		Bill Type: Hydro
+		Bill Amount: 300.0
+		Agency Name: Ontario Hydro
+		Units Consumed: 897.0
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $300.00
+
+
+*********************************************
+
+
+
+
+# DISPLAYS CUSTOMERS BY THEIR ID
+
+############## Showing Customer By ID ##############
+
+
+
+---------------- Customer Information ------------
+Customer ID: 1
+Name: Kush Bhatia
+Email ID: kush@gmail.com
+Mobile Number: 9990390900
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 2
+		Bill Date: 18/February/2020
+		Bill Type: Mobile
+		Bill Amount: $234.95
+		Manufacturer Name: Freedom
+		Plan Name: Business Plan
+		Mobile Data Used: 8.9 GB
+		Minute: 999.67 Mins
+*********************************************
+		Bill ID: 7
+		Bill Date: 18/February/2020
+		Bill Type: Hydro
+		Bill Amount: 215.0
+		Agency Name: Toronto Hydro
+		Units Consumed: 677.0
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $449.95
+
+
+*********************************************
+
+
+############## Showing Customer By ID ##############
+
+
+
+---------------- Customer Information ------------
+Customer ID: 5
+Name: Uday Shetty
+Email ID: Udaybhai@gmail.com
+Mobile Number: 1717827382
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 9
+		Bill Date: 18/February/2020
+		Bill Type: Hydro
+		Bill Amount: 300.0
+		Agency Name: Ontario Hydro
+		Units Consumed: 897.0
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $300.00
+
+*********************************************
+
+# THE INVALID CUSTOMERS 
+
+
+THE CUSTOMER DOES NOT EXIST...
+******************************************
+
+
+
+# Printing Customers in a sorted way 
+
+---------------- Customer Information ------------
+Customer ID: 4
+Name: Ram Sharma
+Email ID: major@yahoo.com
+Mobile Number: 8787112356
+----------------No bill information for this customer----------------
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $0.00
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 3
+Name: Raghav Bobal
+Email ID: raghav@gmail.com
+Mobile Number: 6479370707
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 1
+		Bill Date: 18/February/2020
+		Bill Type: Mobile
+		Bill Amount: $170.05
+		Manufacturer Name: Fido
+		Plan Name: Student Plan
+		Mobile Data Used: 6.1 GB
+		Minute: 567.0 Mins
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $170.05
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 5
+Name: Uday Shetty
+Email ID: Udaybhai@gmail.com
+Mobile Number: 1717827382
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 9
+		Bill Date: 18/February/2020
+		Bill Type: Hydro
+		Bill Amount: 300.0
+		Agency Name: Ontario Hydro
+		Units Consumed: 897.0
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $300.00
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 1
+Name: Kush Bhatia
+Email ID: kush@gmail.com
+Mobile Number: 9990390900
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 2
+		Bill Date: 18/February/2020
+		Bill Type: Mobile
+		Bill Amount: $234.95
+		Manufacturer Name: Freedom
+		Plan Name: Business Plan
+		Mobile Data Used: 8.9 GB
+		Minute: 999.67 Mins
+*********************************************
+		Bill ID: 7
+		Bill Date: 18/February/2020
+		Bill Type: Hydro
+		Bill Amount: 215.0
+		Agency Name: Toronto Hydro
+		Units Consumed: 677.0
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $449.95
+
+
+*********************************************
+---------------- Customer Information ------------
+Customer ID: 2
+Name: Salman Khan
+Email ID: Salm323@gmail.com
+Mobile Number: 9999992700
+---------------- Bill Information ----------------
+*********************************************
+		Bill ID: 4
+		Bill Date: 18/February/2020
+		Bill Type: Internet
+		Bill Amount: $1227.00
+		Provider Name: Rogers
+		Data: 80.99 GB
+*********************************************
+		Bill ID: 11
+		Bill Date: 18/February/2020
+		Bill Type: Insurance
+		Total Amount: 0.0
+		Insurance Provider Name: TD Insurance
+		Type Of Insurance: Health
+*********************************************
+		Bill ID: 3
+		Bill Date: 18/February/2020
+		Bill Type: Mobile
+		Bill Amount: $201.67
+		Manufacturer Name: Bell
+		Plan Name: Home plan
+		Mobile Data Used: 5.6 GB
+		Minute: 777.77 Mins
+*********************************************
+
+
+TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $1428.66
+
+
+*********************************************
+
+
+
+
+
 # REFERENCES 
 https://answers.unity.com/questions/491060/using-enum-in-an-if-statement.html - For using enum in if - else
 
