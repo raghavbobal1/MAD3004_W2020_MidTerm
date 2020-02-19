@@ -83,27 +83,17 @@ func getCustomerById(customerId: Int)
 getCustomerById(customerId: 1)
 getCustomerById(customerId: 5)
 
-//func orderedDisplayOfCustomers()
-//{
-//let sortedCustomers = Customer.sorted(by:{ $0.allBillsTotal() > $1.allBillsTotal()})
-//for i in sortedCustomers
-//  {
-//    i.display()
-//  }
-//}
-//
-//
+//Printing and sorting customers
 
-
-
-
-
-
-/*
-var billArray = Array<Bill>()
-billArray.append(m1)
-billArray.append(m2)
-
-c1.newBill(bill: h2, customerId: "A98999")
-
-*/
+print("\n\n Printing Customers in a sorted way \n")
+var sortedCustomers = findingCustomers.sorted
+{
+    (arg0, arg1) -> Bool in
+    
+    let (_, value1) = arg1
+    let (_, value2) = arg0
+    return value1.totalBill > value2.totalBill
+}
+for (_,customer) in sortedCustomers{
+    customer.display()
+}

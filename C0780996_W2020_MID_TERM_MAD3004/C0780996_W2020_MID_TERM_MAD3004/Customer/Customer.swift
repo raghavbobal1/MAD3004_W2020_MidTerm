@@ -114,16 +114,13 @@ public class Customer: IDisplayDelegate
         {
           i.value.display()
         }
-        print("************************************")
+        print("*********************************************")
         print("\n")
         print("TOTAL BILL AMOUNT FOR THE CUSTOMER IS - \(self.totalBill.Setcurrency())")
         print("\n")
-        print("************************************")
+        print("*********************************************")
     }
     
-
-   
-
 
 }
 
