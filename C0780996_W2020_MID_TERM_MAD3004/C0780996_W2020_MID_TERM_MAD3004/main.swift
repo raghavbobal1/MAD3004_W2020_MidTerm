@@ -75,16 +75,16 @@ func getCustomerById(customerId: Int)
         }
         else
         {
-                print("Customer Not Found...")
-                print()
+                print("THE CUSTOMER DOES NOT EXIST...")
+                print("******************************************")
         }
     }
 //displaying details of customers with id-1 and id-5
 getCustomerById(customerId: 1)
 getCustomerById(customerId: 5)
-
+print("\n")
+getCustomerById(customerId: 7)
 //Printing and sorting customers
-
 print("\n\n Printing Customers in a sorted way \n")
 var sortedCustomers = findingCustomers.sorted
 {
