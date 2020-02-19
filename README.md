@@ -26,8 +26,8 @@ ADDITIONAL CLASSES: INSURANCE (BONUS)
 
 
 # OUTPUTS
-
-#DSPLAYS ALL CUSTOMERS
+ 
+# DISPLAYS ALL CUSTOMERS
 
 ---------------- Customer Information ------------
 Customer ID: 1
@@ -121,7 +121,7 @@ Customer ID: 4
 Name: Ram Sharma
 Email ID: major@yahoo.com
 Mobile Number: 8787112356
-----------------No bill information for this customer----------------
+------No bill information for this customer-------
 *********************************************
 
 
@@ -129,7 +129,7 @@ TOTAL BILL AMOUNT FOR THE CUSTOMER IS - $0.00
 
 
 *********************************************
----------------- Customer Information ------------
+------------- Customer Information --------------
 Customer ID: 5
 Name: Uday Shetty
 Email ID: Udaybhai@gmail.com
