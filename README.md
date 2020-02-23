@@ -27,16 +27,16 @@ BONUS CLASS: INSURANCE
 
 
 # REFERENCES 
-https://answers.unity.com/questions/491060/using-enum-in-an-if-statement.html - For using enum in if - else
+* [Unity Answers] (https://answers.unity.com/questions/491060/using-enum-in-an-if-statement.html) - For using enum in if - else
 
-https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-days-between-two-dates/40075983 - For calculating the number of days in Insurance Class.
+* [Stack Overflow] (https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-days-between-two-dates/40075983) - For calculating the number of days in Insurance Class.
 
-http://swiftdeveloperblog.com/code-examples/validate-email-address-code-example-in-swift/ - For validating the email of customers.
+* [Swift Developer Blog](http://swiftdeveloperblog.com/code-examples/validate-email-address-code-example-in-swift/) - For validating the email of customers.
 
-https://gist.github.com/ranmyfriend/96f6ae1b64b177af62de402c6898a314- For validating the mobile number of customers
+*[GistGitHub] (https://gist.github.com/ranmyfriend/96f6ae1b64b177af62de402c6898a314) - For validating the mobile number of customers
 
-https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html- Helped with syntax
+* [Swift Book] (https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html) - Helped with syntax
 
-https://stackoverflow.com/questions/41558832/how-to-format-a-double-into-currency-swift-3- for formatting currency
+* [Formatting Currency] (https://stackoverflow.com/questions/41558832/how-to-format-a-double-into-currency-swift-3)- for formatting currency
 
-https://developer.apple.com/documentation/foundation/dateformatter- for formatting date 
+* [DateFormatter] (https://developer.apple.com/documentation/foundation/dateformatter) - for formatting date 
